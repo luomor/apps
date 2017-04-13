@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>math magic</title>
+    <style>
+        .sm-box div {
+            position:absolute;
+        }
+        .sm-box {
+            position:relative;
+            margin:0 auto;
+            width:800px;
+            height:800px;
+            background-color:#000;
+        }
+        .sm-box .item {
+            width:3px;
+            height:3px;
+            box-shadow:0 0 5px #f00;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="600" height="400"></canvas>
+<script>
+    function createPoint(x, y, c) {
+        var d = document.createElement("div");
+        d.className = "item";
+        d.style.left = x + "px";
+        d.style.top = y + "px";
+        d.style.backgroundColor = c;
+        document.getElementById("sm-box").appendChild(d);
+    }
+
+    function drawLine(dx, dy, scale) {
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+
+        context.beginPath();
+
+        var t;
+        var x, y;
+        for(t = 0; t < 200; t += 0.4) {
+            x = dx + scale * (10 - 6) * Math.cos(t) + scale * 10 * Math.cos((10 / 6 - 1) * t);
+            y = dy + scale * (10 - 6) * Math.sin(t) - scale * 6 * Math.sin((10 / 6 - 1) * t);
+
+            context.lineTo(x, y);
+        }
+
+        context.stroke();
+        context.closePath();
+    }
+    drawLine(300, 200, 10);
+</script>
+</body>
+</html>
