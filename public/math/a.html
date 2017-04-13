@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>a</title>
+    <style>
+        .sm-box div {
+            position:absolute;
+        }
+        .sm-box {
+            position:relative;
+            margin:0 auto;
+            width:800px;
+            height:800px;
+            background-color:#000;
+        }
+        .sm-box .item {
+            width:3px;
+            height:3px;
+            box-shadow:0 0 5px #f00;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="600" height="400"></canvas>
+<script>
+    function createPoint(x, y, c) {
+        var d = document.createElement("div");
+        d.className = "item";
+        d.style.left = x + "px";
+        d.style.top = y + "px";
+        d.style.backgroundColor = c;
+        document.getElementById("sm-box").appendChild(d);
+    }
+
+    function drawLine(dx, dy, scale) {
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+
+        context.beginPath();
+
+        var t, a, b, d;
+        var r1, r2, r3, x, y;
+        for(t = 160; t < 400; t += 0.1){
+            a = 2 * t;
+            b = 6 * t;
+            d = 18 * t;
+            r1 = 8;
+            r2 = 8;
+            r3 = 8;
+            x = scale * (r1 * Math.cos(a) + r2 * Math.cos(b) + r3 * Math.cos(d)) + dx;
+            y = scale * (r1 * Math.sin(a) + r2 * Math.sin(b) + r3 * Math.sin(d)) + dy;
+
+            context.lineTo(x, y);
+        }
+
+        context.stroke();
+        context.closePath();
+    }
+    drawLine(300, 200, 10);
+</script>
+</body>
+</html>
