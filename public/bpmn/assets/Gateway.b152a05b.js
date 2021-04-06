@@ -1,1 +1,0 @@
-import{C as a,E as e,D as m}from"./common.2a3b3503.js";import"./index.12d94679.js";import"./vendor.f867c041.js";const t=[a,e,m];var o={"bpmn:ExclusiveGateway":t,"bpmn:ParallelGateway":t,"bpmn:ComplexGateway":t,"bpmn:EventBasedGateway":t};export default o;
