@@ -130,20 +130,11 @@
                     music.play();
                 }
 	        }
-	        function autoPlayAudio1() {
-		        wx.config({
-		            // 配置信息, 即使不正确也能使用 wx.ready
-		            debug: false,
-		            appId: '',
-		            timestamp: 1,
-		            nonceStr: '',
-		            signature: '',
-		            jsApiList: []
-		        });
-		        wx.ready(function() {
-		            document.getElementById('ar').play();
-		        });
-		    }
+		    const elementAudio = document.getElementById('ar');
+
+			window.WeixinJSBridge && window.WeixinJSBridge.invoke('getNetworkType', {}, () => {
+			  	elementAudio.play();
+			}, false);
 	        function testAutoPlay () {
 			    // 返回一个promise以告诉调用者检测结果
 			    return new Promise(resolve => {
