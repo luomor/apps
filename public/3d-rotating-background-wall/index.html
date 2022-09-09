@@ -117,9 +117,23 @@
 		<script src="js/tween.min.js"></script>
 		<script src="js/TrackballControls.js"></script>
 		<script src="js/CSS3DRenderer.js"></script>
+		<script type="text/javascript">
+		    window.onload = function(){
+	            setInterval("toggleSound()", 100);
+	        }
+
+		    function toggleSound() {
+                var music = document.getElementById("ar");//获取ID  
+                    
+                if (music.paused) { //判读是否播放  
+                    music.paused=false;
+                    music.play(); //没有就播放 
+                }
+	        }
+		</script>
 
 		<div id="container"></div>
-		<audio autoplay="autoplay" loop="loop" preload="auto"><source src="mp3/1.mp3" type="audio/mp3"></audio>
+		<audio autoplay="autoplay" loop="loop" preload="auto" id="ar"><source src="mp3/1.mp3" type="audio/mp3"></audio>
 		<div id="info">照片墙</div>
 		<div id="menu">
 			<button id="table">表格</button>
