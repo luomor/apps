@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.24b384f2.css",
-    "main.js": "/static/js/main.cb91ef68.js",
-    "index.html": "/index.html",
-    "main.24b384f2.css.map": "/static/css/main.24b384f2.css.map",
-    "main.cb91ef68.js.map": "/static/js/main.cb91ef68.js.map"
+    "main.css": "/lottery-color-ball/static/css/main.24b384f2.css",
+    "main.js": "/lottery-color-ball/static/js/main.3139f4dc.js",
+    "index.html": "/lottery-color-ball/index.html",
+    "main.24b384f2.css.map": "/lottery-color-ball/static/css/main.24b384f2.css.map",
+    "main.3139f4dc.js.map": "/lottery-color-ball/static/js/main.3139f4dc.js.map"
   },
   "entrypoints": [
     "static/css/main.24b384f2.css",
-    "static/js/main.cb91ef68.js"
+    "static/js/main.3139f4dc.js"
   ]
 }
