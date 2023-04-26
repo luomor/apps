@@ -1,5 +1,12 @@
 {
     "apps": [{
+        "title": "烙馍省钱-优惠券领取",
+        "description": "烙馍省钱官网-每日更新天猫淘宝优惠券，更有9.9包邮专区，品牌优选，找券功能齐全。聚划算的优惠券，淘实惠的购物网站，大品牌商品可享折上折，各种超值商品只需一键搜索。特卖、低价、白菜价，尽在烙馍省钱",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://tb.luomor.com/"
+    },{
         "title": "双色球随机选号",
         "description": "双色球随机选号",
         "images": [{
