@@ -6,5 +6,138 @@
             "src": "https://apps.luomor.com/assets/html-logo.png"
         }],
         "url": "https://apps.luomor.com/lottery-color-ball/"
+    },{
+        "title": "双色球随机选号",
+        "description": "双色球随机选号",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/lottery-random/"
+    },{
+        "title": "滚屏",
+        "description": "滚屏",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/2017iwwd/"
+    },{
+        "title": "流程图（pc）",
+        "description": "流程图（pc）",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/aiflow/"
+    },{
+        "title": "百度地图",
+        "description": "百度地图",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/bootstrap-baidu-map/"
+    },{
+        "title": "地球",
+        "description": "地球",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/earth/"
+    },{
+        "title": "万圣前夜（mobile）",
+        "description": "万圣前夜（mobile）",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/hallowmas/index1.html"
+    },{
+        "title": "圣诞节",
+        "description": "圣诞节",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/xmas2020/"
+    },{
+        "title": "中国色",
+        "description": "中国色",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/chinese-color/"
+    },{
+        "title": "AR-Emoji",
+        "description": "AR-Emoji",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/emoji-scavenger-hunt/"
+    },{
+        "title": "红包",
+        "description": "红包",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/foolredpacket/"
+    },{
+        "title": "心",
+        "description": "心",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/math/heart.html"
+    },{
+        "title": "sin",
+        "description": "sin",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/math/sin.html"
+    },{
+        "title": "curve-a",
+        "description": "curve-a",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/math/curve-a.html"
+    },{
+        "title": "curve-b",
+        "description": "curve-b",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/math/curve-b.html"
+    },{
+        "title": "curve-c",
+        "description": "curve-c",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/math/curve-c.html"
+    },{
+        "title": "curve-d",
+        "description": "curve-d",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/math/curve-d.html"
+    },{
+        "title": "curve-e",
+        "description": "curve-e",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/math/curve-e.html"
+    },{
+        "title": "summary-2020",
+        "description": "summary-2020",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/summary-2020/"
+    },{
+        "title": "圣诞节",
+        "description": "圣诞节",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/xmas2021/"
     }]
 }
