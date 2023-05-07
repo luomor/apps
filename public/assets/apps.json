@@ -35,6 +35,13 @@
         }],
         "url": "https://apps.luomor.com/lottery-random/"
     },{
+        "title": "缘计时器",
+        "description": "缘计时器",
+        "images": [{
+            "src": "https://apps.luomor.com/assets/html-logo.png"
+        }],
+        "url": "https://apps.luomor.com/yuan/"
+    },{
         "title": "滚屏",
         "description": "滚屏",
         "images": [{
