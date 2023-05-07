@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>烙馍网 - 缘计时器</title>
+    <meta name="description" content="缘计时器">
+    <meta name="keywords" content="烙馍网,缘计时器">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-87JET1FJ65"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-87JET1FJ65');
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?c8281d72e36e9ac47796d3d2d3c0166c";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript" src="./static/jquery.min.js"></script>
+    <script type="text/javascript" src="./static/TimeCircles.js"></script>
+    <link rel="stylesheet" href="./static/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/TimeCircles.css" />
+    <link rel="icon" href="./favicon.ico">
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+            background-color: #fffceb;
+        }
+
+        .container {
+            width: 800px;
+            height: 340px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -400px;
+            margin-top: -170px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>与Yuan认识了</h2><!--愿圆缘鸳-->
+            <div id="DateCountdown" data-date="2022-11-08 11:32:00"></div>
+        </div>
+    </div>
+    <script>
+        $("#DateCountdown").TimeCircles();
+    </script>
+</body>
+
+</html>
