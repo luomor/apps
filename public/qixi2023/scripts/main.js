@@ -143,7 +143,7 @@
       console.log(textIndex)
     }, false)
 
-    document.addEventListener('touchstart', function (e) {
+    /*document.addEventListener('touchstart', function (e) {
       textIndex++
       if (textIndex >= texts.length) {
         textIndex--
@@ -151,7 +151,7 @@
       }
       text = texts[textIndex]
       console.log(textIndex)
-    }, false)
+    }, false)*/
   }
 
   function init () {
