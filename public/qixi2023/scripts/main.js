@@ -28,17 +28,18 @@
   var img_music = document.getElementById('img_music');
   var audio_music = document.getElementById('audio_music');
   document.getElementById('div_music').addEventListener('click', music_switch, false);
-  function music_switch() { //切换
-      if(audio_music.paused) {
-          console.log('switch music to play');
-          audio_music.play();
-          img_music.style.animation = "music_play_rotate 1s linear infinite";
-      } else {
-          console.log('switch music to paused'); 
-          audio_music.pause();
-          // audio_record.play(); //
-          img_music.style.animation = "";
-      } 
+  function music_switch(e) { //切换
+    // e.preventDefault()
+    if(audio_music.paused) {
+        console.log('switch music to play');
+        audio_music.play();
+        img_music.style.animation = "music_play_rotate 1s linear infinite";
+    } else {
+        console.log('switch music to paused'); 
+        audio_music.pause();
+        // audio_record.play(); //
+        img_music.style.animation = "";
+    }
   }
 
   let texts = ['七待是你', '夕望是你', '满天星斗', '不及你', '做我女朋友', '好不好', '❤️朱苑❤️']
@@ -149,6 +150,9 @@
 
   function event () {
     document.addEventListener('click', function (e) {
+      if(e.target.id == "img_music") {
+        return;
+      }
       textIndex++
       if (textIndex >= texts.length) {
         textIndex--
