@@ -102,3 +102,29 @@ a:hover {
 #canvas{
     margin: 0 auto;
 }
+
+#div_btn_inner {
+    padding-left: 300px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+.div_btn {
+    position:fixed;
+    z-index:999;
+    width:42px;
+    height:42px;
+    border:2px solid #fff;
+    border-radius:50%;
+    text-align:center;
+    font-size:1em;
+    line-height:40px;
+    cursor:pointer;
+}
+#div_music {
+    top:30px;
+    border:none;
+}
+@keyframes music_play_rotate{
+    0%{transform:rotate(0);}
+    100%{transform:rotate(360deg);}
+}
