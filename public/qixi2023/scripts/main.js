@@ -5,7 +5,11 @@
   const FRAME_RATE = 60
   const PARTICLE_NUM = 2000
   const RADIUS = Math.PI * 2
-  const CANVASWIDTH = 500
+  // const CANVASWIDTH = 500
+  let CANVASWIDTH = window.screen.availWidth
+  if(CANVASWIDTH > 500) {
+    CANVASWIDTH = 500
+  }
   const CANVASHEIGHT = 150
   const CANVASID = 'canvas'
 
