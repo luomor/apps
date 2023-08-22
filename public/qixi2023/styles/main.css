@@ -27,6 +27,8 @@ body {
     filter: contrast(120%);
     /*background-color: black;*/
     background-color: rgb(82, 111, 198);
+    /*background-color: rgba(226, 225, 142);
+    background-color: rgb(220, 218, 97);*/
     position: relative;
 }
 

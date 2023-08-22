@@ -218,7 +218,8 @@
       }
     }
     draw (ctx) {
-      ctx.fillStyle = 'rgba(226,225,142, ' + this.opacity + ')'
+      //ctx.fillStyle = 'rgba(226, 225, 142, ' + this.opacity + ')'
+      ctx.fillStyle = 'rgba(220, 218, 97, ' + this.opacity + ')'
       ctx.beginPath()
       ctx.arc(this.x, this.y, this.size, 0, RADIUS, true)
       ctx.closePath()
