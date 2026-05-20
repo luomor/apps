@@ -14,10 +14,12 @@
 | AI 流程图 | [打开](https://apps.luomor.com/aiflow/) |
 | 百度地图 | [打开](https://apps.luomor.com/bootstrap-baidu-map/) |
 | 3D 地球 | [打开](https://apps.luomor.com/earth/) |
+| 3D旋转照片墙 | [打开](https://apps.luomor.com/3d-rotating-background-wall/) |
 | 圣诞节 2020 | [打开](https://apps.luomor.com/xmas2020/) |
 | 中国色 | [打开](https://apps.luomor.com/chinese-color/) |
 | AR Emoji 寻宝 | [打开](https://apps.luomor.com/emoji-scavenger-hunt/) |
 | 愚人节红包 | [打开](https://apps.luomor.com/foolredpacket/) |
+| 爱心表白 | [打开](https://apps.luomor.com/baby/2021/) |
 | 心形动画 | [打开](https://apps.luomor.com/math/heart.html) |
 | sin 函数可视化 | [打开](https://apps.luomor.com/math/sin.html) |
 | 曲线可视化 a | [打开](https://apps.luomor.com/math/curve-a.html) |
