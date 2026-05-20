@@ -1,75 +1,75 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+本文件为 Claude Code (claude.ai/code) 操作此代码库提供指引。
 
-## Repository Overview
+## 仓库概述
 
-This is the **luomor-apps** monorepo — a collection of static web apps hosted at `https://apps.luomor.com`. The repo structure:
+这是 **luomor-apps** 单体仓库（monorepo），托管在 `https://apps.luomor.com` 的静态 Web 应用集合。仓库结构：
 
-- `public/` — all deployed web applications (static HTML/CSS/JS)
-- `docs/` — documentation and command logs
-- `public/assets/` — shared assets (images, favicon), `apps.json` lists all apps
+- `public/` — 所有已部署的 Web 应用（静态 HTML/CSS/JS）
+- `docs/` — 文档和操作记录
+- `public/assets/` — 共享静态资源（图片、favicon），`apps.json` 列出全部应用
 
-The landing page (`public/index.html`) is the app directory at `https://apps.luomor.com/`, listing all available apps with SEO metadata. Apps are registered in `public/assets/apps.json`.
+首页（`public/index.html`）是应用列表页面，位于 `https://apps.luomor.com/`，带 SEO 元数据展示所有可用应用。应用注册信息在 `public/assets/apps.json`。
 
-## Project Structure
+## 项目结构
 
 ```
 public/
-├── index.html            # Landing page (React/Vite-built SPA)
-├── assets/               # Shared static files + apps.json registry
-├── lottery-color-ball/   # Double Color Ball lottery number picker (CRA React app)
-├── lottery-random/       # Random lottery picker
-├── yuan/                 # Yuan countdown timer
-├── math/                 # Math function demos (sin, heart, curves)
-├── qixi2023/             # Qixi Festival interactive page
-├── xmas2020/, xmas2021/  # Christmas themed pages
-├── bootstrap-baidu-map/  # Baidu Maps integration (jQuery + Bootstrap)
-├── earth/                # 3D globe visualization
-├── emoji-scavenger-hunt/ # AR Emoji scavenger game (TensorFlow.js model included)
-├── foolredpacket/        # Red envelope animation
-├── summary-2020/         # Annual summary page
-├── aiflow/               # Flowchart tool (Ant Design-based)
-├── pyscript/             # PyScript playground (Svelte + TypeScript)
-└── ...                   # Other static demo pages
+├── index.html            # 首页入口（React/Vite 构建的单页应用）
+├── assets/               # 共享静态文件 + apps.json 应用列表
+├── lottery-color-ball/   # 双色球随机选号（CRA React 应用）
+├── lottery-random/       # 随机选号器
+├── yuan/                 # 缘计时器
+├── math/                 # 数学函数演示（正弦、心形、曲线等）
+├── qixi2023/             # 七夕节互动页面
+├── xmas2020/, xmas2021/  # 圣诞节主题页面
+├── bootstrap-baidu-map/  # 百度地图集成（jQuery + Bootstrap）
+├── earth/                # 3D 地球可视化
+├── emoji-scavenger-hunt/ # AR Emoji 寻宝游戏（含 TensorFlow.js 模型）
+├── foolredpacket/        # 红包动画
+├── summary-2020/         # 年度总结页面
+├── aiflow/               # 流程图工具（基于 Ant Design）
+├── pyscript/             # PyScript 在线编辑器（Svelte + TypeScript）
+└── ...                   # 其他静态演示页面
 ```
 
-## Tech Stacks by App
+## 各应用技术栈
 
-| App | Stack | Notes |
-|-----|-------|-------|
-| `pyscript/pyscriptjs/` | Svelte + TypeScript + Tailwind + Rollup | Only app with tracked source code |
-| `lottery-color-ball/` | React (CRA) | Has manifest.json, static/build artifacts |
-| Most other apps | Plain HTML/CSS/JS | No build system, pre-built static files |
+| 应用 | 技术栈 | 备注 |
+|------|--------|------|
+| `pyscript/pyscriptjs/` | Svelte + TypeScript + Tailwind + Rollup | 唯一保留源码可开发的应用 |
+| `lottery-color-ball/` | React (CRA) | 包含 manifest.json、build 产物 |
+| 大部分其他应用 | 纯 HTML/CSS/JS | 无构建系统，直接修改静态文件 |
 
-## Commands
+## 命令
 
-### pyscript (the only app with developable source code)
+### pyscript（唯一可开发的源码项目）
 
 ```bash
 cd public/pyscript/pyscriptjs
 npm install
-npm run dev          # Start dev server with hot reload
-npm run build        # Production build
-npm run validate     # Run svelte-check
+npm run dev          # 启动热重载开发服务器
+npm run build        # 生产环境构建
+npm run validate     # 运行 svelte-check
 npm run lint         # ESLint
-npm run lint:fix     # ESLint auto-fix
-npm run format       # Prettier format
-npm run start        # Serve built assets on port 8080
+npm run lint:fix     # ESLint 自动修复
+npm run format       # Prettier 格式化
+npm run start        # 在 8080 端口提供构建后的静态文件
 ```
 
-### General
+### 通用
 
-- Most apps are already-built static sites — modifications are made directly to the HTML/CSS/JS files
-- The landing page (`public/index.html`) is built from a source SPA referencing `/assets/index-apps.*.js`
-- Add new apps to `public/assets/apps.json` following the existing format
+- 大部分应用已是构建好的静态站点，直接在 HTML/CSS/JS 文件中修改即可
+- 首页（`public/index.html`）由引用 `/assets/index-apps.*.js` 的 SPA 构建
+- 新增应用时按现有格式添加到 `public/assets/apps.json`
 
-## Deployment
+## 部署
 
-Apps are served as static files from `https://apps.luomor.com/<app-name>/`. Each app is a subdirectory under `public/` with its own `index.html`. No CI/CD config exists in this repo.
+应用以静态文件形式托管在 `https://apps.luomor.com/<app-name>/`，每个应用在 `public/` 下对应一个独立子目录，内含各自的 `index.html`。本仓库未配置 CI/CD。
 
-## Key Files
+## 关键文件
 
-- `public/index.html` — Main landing page with SEO (Open Graph, Schema.org, Twitter Card) and analytics (Google Ads, Google Analytics, Baidu Tongji)
-- `public/assets/apps.json` — App registry used by the landing page to list all apps
-- `changelog.txt` — Version tracking log in Chinese
+- `public/index.html` — 主入口页面，含 SEO（Open Graph、Schema.org、Twitter Card）和统计（Google Adsense、Google Analytics、百度统计）
+- `public/assets/apps.json` — 首页加载的应用列表数据源
+- `changelog.txt` — 中文版本变更记录
