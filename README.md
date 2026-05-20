@@ -21,7 +21,11 @@
 | 红包 | <https://apps.luomor.com/foolredpacket/> |
 | 心形曲线 | <https://apps.luomor.com/math/heart.html> |
 | 正弦函数 | <https://apps.luomor.com/math/sin.html> |
-| 曲线-a~e | <https://apps.luomor.com/math/curve-a.html> ~ <https://apps.luomor.com/math/curve-e.html> |
+| 曲线-a | <https://apps.luomor.com/math/curve-a.html> |
+| 曲线-b | <https://apps.luomor.com/math/curve-b.html> |
+| 曲线-c | <https://apps.luomor.com/math/curve-c.html> |
+| 曲线-d | <https://apps.luomor.com/math/curve-d.html> |
+| 曲线-e | <https://apps.luomor.com/math/curve-e.html> |
 | 2020 年终总结 | <https://apps.luomor.com/summary-2020/> |
 | 圣诞节 2021 | <https://apps.luomor.com/xmas2021/> |
 | 图像识别 | <https://ai-image-recognize.luomor.com/test.php> |
