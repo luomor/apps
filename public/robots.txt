@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /pyscript/
+
+Sitemap: https://apps.luomor.com/sitemap.xml
